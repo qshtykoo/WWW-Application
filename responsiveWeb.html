@@ -51,6 +51,38 @@ body {
         width: 100%;
     }
 }
+img {
+    width: 100px;
+	padding: 4px;
+}
+.added_img{
+	-webkit-animation: floating-animation 6s ease-in-out infinite;
+	-o-animation: floating-animation 6s ease-in-out infinite;
+	animation: floating-animation 6s ease-in-out infinite;
+}
+@keyframes floating-animation{
+	0%{
+		-webkit-animation: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50%{
+		-webkit-animation: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+	100%{
+		-webkit-animation: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
 </style>
 </head>
 <body>
@@ -74,6 +106,10 @@ body {
   <h1>The Forests</h1>
   <p>The girl is singing with that thing in her hands trying to find the source.</p>
   <p>The boy is the little girl's brother and he has just been following her.</p>
+</div>
+
+<div class="col-3">
+     <img src = "https://i.pinimg.com/originals/bc/30/72/bc30723029d56dbe5bea22fb17c38f1a.jpg" alt="" class="added_img">
 </div>
 
 </div>
