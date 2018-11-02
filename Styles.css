@@ -26,11 +26,11 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 body {
-    background-image: url("http://www.cartoonsaloon.ie/wp-content/uploads/2015/03/Ben-saoirse-walking-with-foxes-in-foreground.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center top;
-	background-size: 100% auto;
+    /*background-image: url("http://www.cartoonsaloon.ie/wp-content/uploads/2015/03/Ben-saoirse-walking-with-foxes-in-foreground.jpg");*/
+	/*background-repeat: no-repeat;*/
+	/*background-attachment: fixed;*/
+	/*background-position: center top;*/
+	/*background-size: 100% auto;*/
 
 }
 @media only screen and (max-width: 768px) {
@@ -45,11 +45,11 @@ img {
     width: 100px;
 	padding: 4px;
 }
-.added_img{
-	-webkit-animation: floating-animation 6s ease-in-out infinite;
-	-o-animation: floating-animation 6s ease-in-out infinite;
-	animation: floating-animation 6s ease-in-out infinite;
-}
+/*.added_img{*/
+	/*-webkit-animation: floating-animation 6s ease-in-out infinite;*/
+	/*-o-animation: floating-animation 6s ease-in-out infinite;*/
+	/*animation: floating-animation 6s ease-in-out infinite;*/
+/*}*/
 @keyframes floating-animation{
 	0%{
 		-webkit-animation: translateY(0);
