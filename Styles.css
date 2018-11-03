@@ -2,16 +2,23 @@
     box-sizing: border-box;
 }
 .carousel-inner > .item > img {
-  width:640px;
-  height:360px;
+  width:100%;
+  height:auto; 
+  /*make sure img takes up entire carousel */
 }
 .page-header {
 	background-color: rgba(0,0,0,0.2);
 	width: 100%;
 	margin: auto;
     color: #ffffff;
-    padding: 15px;
+	padding: 15px;
 	border-bottom: 0px;
+}
+p {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	font-size: 25px;
 }
 .box-style{
 	background-color: rgba(0,0,0,0.6);
@@ -22,6 +29,7 @@
     clear: both;
     display: table;
 }
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
@@ -31,8 +39,8 @@ body {
 	/*background-attachment: fixed;*/
 	/*background-position: center top;*/
 	/*background-size: 100% auto;*/
-
 }
+
 @media only screen and (max-width: 768px) {
     body {
         background-size: 100% 100%;
