@@ -22,6 +22,15 @@ body {
     }
 }
 
+#snowfall-wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .flake-small, .flake-big{
     opacity: 0.5;
     color: white;
