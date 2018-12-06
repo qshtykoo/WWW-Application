@@ -34,11 +34,6 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 body {
-    /*background-image: url("http://www.cartoonsaloon.ie/wp-content/uploads/2015/03/Ben-saoirse-walking-with-foxes-in-foreground.jpg");*/
-	/*background-repeat: no-repeat;*/
-	/*background-attachment: fixed;*/
-	/*background-position: center top;*/
-	/*background-size: 100% auto;*/
 }
 
 @media only screen and (max-width: 768px) {
