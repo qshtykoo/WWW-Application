@@ -3,14 +3,14 @@
 }
 .carousel-inner > .item > img {
   width:100%;
-  height:auto; 
+  height:auto;
   /*make sure img takes up entire carousel */
 }
 .page-header {
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0);
 	width: 100%;
 	margin: auto;
-    color: #ffffff;
+    color: #525a78;
 	padding: 15px;
 	border-bottom: 0px;
 }
@@ -21,8 +21,8 @@ p {
 	font-size: 25px;
 }
 .box-style{
-	background-color: rgba(0,0,0,0.6);
-	color: white;
+	background-color: rgba(0,0,0,0);
+	color: #525a78;
 }
 .row::after {
     content: "";
@@ -75,4 +75,8 @@ img {
 		-o-transform: translateY(0);
 		transform: translateY(0);
 	}
+}
+
+.default-heading, .menu-container {
+    display:inline-block;
 }
