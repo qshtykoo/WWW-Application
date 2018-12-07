@@ -1,4 +1,4 @@
-/* jquery-Snowfall v1.0 | h4wldev@gmail.com | http://github.com/h4wldev */
+
 
 (function($) {
     $.snowfall = {
