@@ -32,7 +32,9 @@ body {
   display: none;
 }
 
-.mySlides {display:none}
+.mySlides {
+	display:none;
+}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
@@ -45,6 +47,49 @@ body {
 .button-self:hover {
 	background-image: linear-gradient(rgba(0,0,0,0.5) 0px, rgba(0,0,0,0) 100%);
 	width: 10%;
+}
+
+@keyframes animateleft {
+	0%{
+		left: -300px;
+		opacity: 0;
+	}
+	100%{
+		left: 0;
+		opacity: 1;
+	}
+	
+}
+
+@keyframes animateright {
+	0%{
+		right: -300px;
+		opacity: 0;
+	}
+	100%{
+		right: 0;
+		opacity: 1;
+	}
+	
+}
+
+.left-slide {
+	/*
+	animation-delay: 0s;
+	animation-direction: normal;
+	animation-duration: 0.4s;
+	animation-fill-mode: none;
+	animation-iteration-count: 1;
+	animation-name: animateleft;
+	animation-play-state: running;
+	animation-timing-function: ease;*/
+	position: relative;
+	animation: animateleft 0.4s;
+}
+
+.right-slide {
+	position: relative;
+	animation: animateright 0.4s;
 }
 
 @media screen and (max-width: 600px) {

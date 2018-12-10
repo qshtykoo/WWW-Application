@@ -22,9 +22,9 @@
 </div>
 
 <div class="w3-content w3-display-container" style="max-width:800px; margin-top:3%;">
-  <img class="mySlides" src="images/1.jpg" style="width:80%; margin:auto;">
-  <img class="mySlides" src="images/2.jpg" style="width:80%; margin:auto;">
-  <img class="mySlides" src="images/3.jpg" style="width:80%; margin:auto;">
+  <img class="mySlides left-slide" src="images/1.jpg" style="width:80%; margin:auto;">
+  <img class="mySlides left-slide" src="images/2.jpg" style="width:80%; margin:auto;">
+  <img class="mySlides left-slide" src="images/3.jpg" style="width:80%; margin:auto;">
   <div class="w3-center w3-container w3-large w3-text-white" style="margin:auto;">
 	  <button class="button-self w3-left w3-hover-text-khaki w3-display-left" style="height:100%; margin:auto; color:#fff; left:10.05%" onclick="plusDivs(-1)">&#10094;</button>
 	  <button class="button-self w3-right w3-hover-text-khaki w3-display-right" style="height:100%; margin:auto; color:#fff; right:10%" onclick="plusDivs(1)">&#10095;</button>
@@ -49,26 +49,48 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  showDivs(slideIndex += n, n);
 }
 
 function currentDiv(n) {
-  showDivs(slideIndex = n);
+  showDivs(slideIndex = n, n);
 }
 
-function showDivs(n) {
+function showDivs(n, step) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none"; 
+	 if (step > 0){
+		if(x[i].classList.contains("right-slide")){
+			x[i].classList.replace("right-slide", "left-slide");
+		}
+		else 
+		{
+			x[i].classList.add("left-slide");
+		}
+	  }
+	  if (step < 0){
+		if(x[i].classList.contains("left-slide")){
+			x[i].classList.replace("left-slide", "right-slide");
+		}
+		else 
+		{
+			x[i].classList.add("right-slide");
+		}
+	  }
   }
+  
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" w3-white", "");
   }
+  
   x[slideIndex-1].style.display = "block";
+  //x[slideIndex-1].classList.remove("left-slide");
+
   if(slideIndex == 1)  
   {dots[slideIndex-1].className += " w3-white";}
 }
@@ -93,7 +115,7 @@ function carousel() {
 	if(myIndex == 1)  
 	{dots[myIndex-1].className += " w3-white";}
 
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 2 seconds
 }
 </script>
 
