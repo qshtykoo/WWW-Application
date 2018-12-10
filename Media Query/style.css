@@ -49,9 +49,25 @@ body {
 	width: 10%;
 }
 
+.page-header {
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	margin: auto;
+    color: #525a78;
+	padding: 15px;
+	border-bottom: 0px;
+	display: block;
+}
+p {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	font-size: 25px;
+}
+
 @keyframes animateleft {
 	0%{
-		left: -300px;
+		left: -100px;
 		opacity: 0;
 	}
 	100%{
@@ -63,7 +79,7 @@ body {
 
 @keyframes animateright {
 	0%{
-		right: -300px;
+		right: -100px;
 		opacity: 0;
 	}
 	100%{
@@ -92,12 +108,62 @@ body {
 	animation: animateright 0.4s;
 }
 
+.small-col-1 {
+	left: 10%;
+	width: 16.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	margin: auto;
+}
+.small-col-2 {
+	left: 29%;
+	width: 16.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	margin: auto;
+}
+.small-col-3 {
+	left: 43%;
+	width: 16.66666667%;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	margin: auto;
+}
+.col-style{
+	background-color: rgba(0,0,0,0);
+	color: #525a78;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  p{font-size: 12.5px;}
+  .small-col-1{
+	  width: 100%;
+	  left: 0%;
+	}
+  .small-col-2{
+	  width: 100%;
+	  left: 0%;
+	}
+  .small-col-3{
+	  width: 100%;
+	  left: 0%;
+	}
+
 }
 
 @media screen and (max-width: 600px) {
