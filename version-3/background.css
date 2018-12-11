@@ -1,0 +1,35 @@
+/*background animation*/
+body {
+    color: #fff;
+    background: linear-gradient(-45deg, #c188d7, #ffc6fb, #A6E9C6, #FFF3AD, #00feff, #e49eff);
+    background-size: 400% 400%;
+    animation: gradientAnim 15s ease infinite;
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.snow .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#snow-top-layer {
+    transition: all 22.5s linear;
+    transform: translateY(-768px);
+}
+
+#snow-bottom-layer {
+    transition: all 45s linear;
+    transform: translateY(-768px);
+}
