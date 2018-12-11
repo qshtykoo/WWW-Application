@@ -72,7 +72,7 @@ body {
 
 h1 {
     margin: auto;
-    text-align: center !important;
+    text-align: center;
     font-size: 25px;
 }
 
