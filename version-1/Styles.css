@@ -30,6 +30,10 @@ p {
     display: table;
 }
 
+.button{
+  color: white;
+}
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
