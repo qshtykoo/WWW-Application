@@ -8,7 +8,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0);
 	position: relative;
 	z-index: 1;
 }
@@ -16,15 +16,15 @@ body {
 .topnav a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #525a78;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: white;
     color: black;
 }
 
