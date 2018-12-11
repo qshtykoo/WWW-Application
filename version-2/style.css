@@ -71,6 +71,16 @@ body {
     display: block;
 }
 
+.snow2 {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 p {
     margin: auto;
     width: 50%;

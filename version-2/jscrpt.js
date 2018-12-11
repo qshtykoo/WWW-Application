@@ -14,7 +14,7 @@
             }, options);
 
             if ($wrapper == undefined) {
-                $('body').append('<div id="snowfall-wrapper" />');
+                $('.snow2').prepend('<div id="snowfall-wrapper" />');
                 $wrapper = $('#snowfall-wrapper');
             }
 
@@ -65,7 +65,7 @@
             }, options);
 
             if ($wrapper == undefined) {
-                $('body').append('<div id="snowfall-wrapper" />');
+                $('.snow2').prepend('<div id="snowfall-wrapper" />');
                 $wrapper = $('#snowfall-wrapper');
             }
 

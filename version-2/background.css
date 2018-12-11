@@ -23,7 +23,7 @@ body {
 }
 
 #snowfall-wrapper {
-    overflow: hidden;
+    /*overflow: auto;*/
     height: 100%;
     width: 100%;
     position: absolute;
