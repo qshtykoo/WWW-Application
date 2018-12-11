@@ -1,1 +1,1 @@
-# WWW-Application
+# Group project for course WWW Application
