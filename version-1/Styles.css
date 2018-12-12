@@ -52,6 +52,11 @@ img {
     width: 100px;
 	padding: 4px;
 }
+
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
 /*.added_img{*/
 	/*-webkit-animation: floating-animation 6s ease-in-out infinite;*/
 	/*-o-animation: floating-animation 6s ease-in-out infinite;*/
