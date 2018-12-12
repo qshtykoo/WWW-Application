@@ -4,6 +4,7 @@ window.onload = function () {
     /*first snow*/
     let el = document.createElement("div");
     el.classList.add("snow");
+    console.log("added snow number > " + snowCounter);
     el.id = "snow" + snowCounter++;
     document.body.appendChild(el);
     el.innerHTML = snow;
@@ -12,6 +13,7 @@ window.onload = function () {
     setInterval(function () {
         let el = document.createElement("div");
         el.classList.add("snow");
+        console.log("added snow number > " + snowCounter);
         el.id = "snow" + snowCounter++;
         document.body.prepend(el);
         el.innerHTML = snow;
@@ -19,12 +21,13 @@ window.onload = function () {
 
     setInterval(function () {
         if (snowCounter === 2) {
-            console.log(0);
+            console.log("removed snow number > 0");
             let snowElement = document.getElementById("snow0");
             snowElement.parentNode.removeChild(snowElement);
         } else {
             let snowElement = document.getElementById("snow" + (snowCounter - 2));
             snowElement.parentNode.removeChild(snowElement);
+            console.log("removed snow number > " + (snowCounter-2));
         }
     }, 12000);
 
