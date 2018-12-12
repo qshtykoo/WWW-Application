@@ -6,7 +6,7 @@ window.onload = function () {
     el.classList.add("snow");
     console.log("added snow number > " + snowCounter);
     el.id = "snow" + snowCounter++;
-    document.body.appendChild(el);
+    document.body.prepend(el);
     el.innerHTML = snow;
 
     /*next snowfalls*/
@@ -17,7 +17,7 @@ window.onload = function () {
         el.id = "snow" + snowCounter++;
         document.body.prepend(el);
         el.innerHTML = snow;
-    }, 11999);
+    }, 11900);
 
     setInterval(function () {
         if (snowCounter === 2) {
