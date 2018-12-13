@@ -9,7 +9,6 @@
                 size: '1vw',
                 interval: 1000,
                 color: '#fff',
-                content: '&#10052;',
                 disappear: 'linear'
             }, options);
 
@@ -60,7 +59,6 @@
                 size: '2vw',
                 interval: 1000,
                 color: '#fff',
-                content: '&#10052;',
                 disappear: 'linear'
             }, options);
 
