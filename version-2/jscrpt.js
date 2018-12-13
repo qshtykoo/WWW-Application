@@ -17,7 +17,10 @@
                 $wrapper = $('#snowfall-wrapper');
             }
 
-            var $snowfall = $('<div class="flake-small" />').css({'position': 'absolute', 'top': '-50px'}).html(options.content);
+            var $snowfall = $('<div class="flake-small" />').css({
+                'position': 'absolute',
+                'top': '0'
+            }).html(options.content);
 
             $.snowfall.$wrapper = $wrapper;
             $.snowfall.$wrapper.show();
@@ -27,15 +30,35 @@
                     wrapperHeight = $wrapper.height(),
                     flakeSize = options.size,
                     duration = 22000,
-                    startPosition = (Math.random() * wrapperWidth);
+                    startPositionW = (Math.random() * wrapperWidth),
+                    startPositionH = (Math.random() * wrapperHeight) / 2;
 
                 $snowfall.clone().appendTo($wrapper).css({
-                    'left': startPosition,
+                    'left': startPositionW,
+                    'top': startPositionH,
                     'width': flakeSize,
                     'height': flakeSize,
                 }).animate({
                     top: wrapperHeight - 40,
                 }, duration, options.disappear, function() {
+                    $(this).remove();
+                });
+            }, 5000));
+
+            $.snowfall.intervals.push(setInterval(function () {
+                var wrapperWidth = $wrapper.width(),
+                    wrapperHeight = $wrapper.height(),
+                    flakeSize = options.size,
+                    duration = 22000,
+                    startPositionW = (Math.random() * wrapperWidth);
+
+                $snowfall.clone().appendTo($wrapper).css({
+                    'left': startPositionW,
+                    'width': flakeSize,
+                    'height': flakeSize,
+                }).animate({
+                    top: wrapperHeight - 40,
+                }, duration, options.disappear, function () {
                     $(this).remove();
                 });
             }, options.interval));
@@ -67,7 +90,10 @@
                 $wrapper = $('#snowfall-wrapper');
             }
 
-            var $snowfall = $('<div class="flake-big" />').css({'position': 'absolute', 'top': '-50px'}).html(options.content);
+            var $snowfall = $('<div class="flake-big" />').css({
+                'position': 'absolute',
+                'top': '0'
+            }).html(options.content);
 
             $.snowfall.$wrapper = $wrapper;
             $.snowfall.$wrapper.show();
@@ -76,16 +102,36 @@
                 var wrapperWidth = $wrapper.width(),
                     wrapperHeight = $wrapper.height(),
                     flakeSize = options.size,
-                    duration = 45000,
-                    startPosition = (Math.random() * wrapperWidth);
+                    duration = 22000,
+                    startPositionW = (Math.random() * wrapperWidth),
+                    startPositionH = (Math.random() * wrapperHeight) / 2;
 
                 $snowfall.clone().appendTo($wrapper).css({
-                    'left': startPosition,
+                    'left': startPositionW,
+                    'top': startPositionH,
                     'width': flakeSize,
-                    'height': flakeSize
+                    'height': flakeSize,
                 }).animate({
-                    top: wrapperHeight - 40
+                    top: wrapperHeight - 40,
                 }, duration, options.disappear, function() {
+                    $(this).remove();
+                });
+            }, 5000));
+
+            $.snowfall.intervals.push(setInterval(function () {
+                var wrapperWidth = $wrapper.width(),
+                    wrapperHeight = $wrapper.height(),
+                    flakeSize = options.size,
+                    duration = 22000,
+                    startPositionW = (Math.random() * wrapperWidth);
+
+                $snowfall.clone().appendTo($wrapper).css({
+                    'left': startPositionW,
+                    'width': flakeSize,
+                    'height': flakeSize,
+                }).animate({
+                    top: wrapperHeight - 40,
+                }, duration, options.disappear, function () {
                     $(this).remove();
                 });
             }, options.interval));
